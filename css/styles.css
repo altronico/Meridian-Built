@@ -33,8 +33,7 @@
    BASE
    ===================== */
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 0;
+  scroll-padding-top: var(--nav-height);
   scroll-snap-type: none;
   overflow-y: scroll;
 }
@@ -52,7 +51,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Offset anchor targets for fixed nav */
+/* Offset anchor targets for fixed nav - handled by scroll-padding-top */
 section[id] {
   scroll-margin-top: 0;
 }
@@ -183,7 +182,7 @@ p {
   }
 
   html {
-    scroll-padding-top: 0;
+    scroll-padding-top: 50px;
   }
 
   body {
@@ -383,6 +382,7 @@ p {
 /* =====================
    APPROACH SECTION - Apple Style
    ===================== */
+
 .approach-section {
   padding-block: clamp(4rem, 8vw, 6rem);
   background-color: var(--color-bg-alt);
@@ -439,6 +439,11 @@ p {
 /* =====================
    ABOUT SECTION - Apple Style
    ===================== */
+
+#about > div > div > div:nth-child(1) {
+  margin-top: -20px !important;
+}
+
 .about-section {
   padding-block: clamp(4rem, 8vw, 6rem);
   background-color: var(--color-bg);
@@ -499,6 +504,9 @@ p {
 /* =====================
    SERVICES SECTION - Apple Style
    ===================== */
+#services > div > div.row.mb-4.mb-lg-5 > div {
+  margin-top: -20px !important;
+}
 .services-section {
   padding-block: clamp(4rem, 8vw, 6rem);
   background-color: var(--color-bg);
@@ -635,12 +643,77 @@ p {
    CONTACT SECTION - Apple Style
    ===================== */
 .contact-section {
+  margin-top: -100px;
   padding-block: clamp(4rem, 8vw, 6rem);
   background-color: var(--color-bg-alt);
   min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.contact-section .row {
+  --bs-gutter-y: 2rem;
+}
+
+.contact-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-info-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-md);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.contact-info-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.contact-info-content p,
+.contact-info-content a {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info-content a:hover {
+  color: var(--color-primary);
+}
+
+.contact-info-content address {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .contact-section .row {
+    align-items: center;
+  }
+
+  .contact-info-wrap {
+    gap: 2rem;
+  }
 }
 
 .contact-form-wrap {

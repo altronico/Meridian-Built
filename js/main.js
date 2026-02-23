@@ -82,32 +82,8 @@
       function scrollToTarget(targetId) {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
-          // Get the actual navbar height (in case it changed on mobile)
-          const navbar = document.querySelector(".navbar");
-          const navbarHeight = navbar ? navbar.offsetHeight : 64;
-
-          // Additional offset for services section in mobile view to prevent navbar from covering content
-          let extraOffset = 0;
-          if (targetId === "services" && window.innerWidth <= 991.98) {
-            extraOffset = 40;
-          }
-
-          // Get the scroll-margin-top of the target element
-          const scrollMarginTop =
-            parseInt(getComputedStyle(targetElement).scrollMarginTop) || 0;
-
-          // Calculate position to scroll to (subtract extra to scroll further down for more clearance)
-          const targetPosition =
-            targetElement.getBoundingClientRect().top +
-            window.pageYOffset -
-            navbarHeight -
-            scrollMarginTop -
-            extraOffset;
-
-          window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth",
-          });
+          // Use CSS native smooth scrolling with scroll-padding-top
+          targetElement.scrollIntoView({ behavior: "smooth" });
         }
       }
     });
