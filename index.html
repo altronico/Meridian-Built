@@ -2,18 +2,8 @@
 <html lang="en">
 
 <head>
-  <!-- Basic Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-    crossorigin="anonymous"></script>
-
 
   <!-- SEO -->
   <title>Meridian Built</title>
@@ -25,388 +15,431 @@
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
-  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="shortcut icon" href="favicon.svg" type="image/png">
 
-
-  <!-- Social Preview (Optional but Professional) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Meridian Built | Construction & Project Consulting">
   <meta property="og:description" content="Structured execution for complex commercial projects.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="favicon.png">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Arial,
-        "Noto Sans", sans-serif;
-      line-height: 1.6;
-      letter-spacing: 0.2px;
-    }
-  </style>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Meridian Built</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Skip Navigation for Screen Readers -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- =====================
+       NAVBAR
+  ===================== -->
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+      <div class="container">
 
-        <!-- Centered Links -->
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+        <a class="navbar-brand" href="#" aria-label="Meridian Built — home">
+          Meridian <span>Built</span>
+        </a>
 
-        <!-- CTA Button Right -->
-        <div class="d-flex">
-          <a href="#" class="btn btn-primary px-4">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav mx-auto gap-lg-3" role="list">
+            <li class="nav-item" role="listitem">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item" role="listitem">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item" role="listitem">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn-nav-cta" aria-label="Request a consultation">
             Request Consultation
           </a>
         </div>
 
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <main class="container">
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">
-        Structured Project Execution
-      </h1>
+  <!-- =====================
+       MAIN CONTENT
+  ===================== -->
+  <main id="main-content">
 
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
-          Construction management and consulting with clarity and discipline.
-        </p>
-
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
-            Request Consultation
-          </button>
-
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            View Services
-          </button>
-        </div>
-      </div>
-
-      <div class="overflow-hidden" style="max-height: 30vh;">
-        <div class="container px-5">
-          <img src="hero.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Commercial project overview"
-            width="700" height="500" loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <!-- Approach -->
-    <section class="py-5 bg-light">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
+        <div class="row align-items-end">
 
-        <!-- Section Title -->
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Our Approach</h2>
-          <p class="text-muted mb-0">
-            Structured execution built on clarity and accountability.
-          </p>
-        </div>
+          <!-- Text -->
+          <div class="col-lg-6 col-xl-5 pb-lg-5">
+            <p class="hero-eyebrow" aria-hidden="true">
+              Construction &amp; Consulting
+            </p>
 
-        <!-- Cards -->
-        <div class="row g-4">
+            <h1 id="hero-heading">
+              Structured <em>Project</em> Execution
+            </h1>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm text-center p-4">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Precision Planning</h5>
-                <p class="text-muted mb-0">
-                  Defined scope, aligned stakeholders, and disciplined preparation.
-                </p>
-              </div>
+            <p class="hero-lead">
+              Construction management and consulting with clarity, discipline, and long-term accountability.
+            </p>
+
+            <div class="hero-actions" role="group" aria-label="Primary actions">
+              <a href="#contact" class="btn-primary-custom">
+                <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                Request Consultation
+              </a>
+              <a href="#services" class="btn-outline-custom">
+                <i class="bi bi-list-ul" aria-hidden="true"></i>
+                View Services
+              </a>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm text-center p-4">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Transparent Process</h5>
-                <p class="text-muted mb-0">
-                  Clear milestones, consistent reporting, measurable accountability.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm text-center p-4">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Controlled Execution</h5>
-                <p class="text-muted mb-0">
-                  Risk-aware delivery focused on long-term results.
-                </p>
-              </div>
+          <!-- Image -->
+          <div class="col-lg-6 col-xl-7">
+            <div class="hero-image-wrap">
+              <img src="assets/images/hero.jpeg"
+                alt="Aerial view of a large commercial construction project in progress" loading="eager"
+                fetchpriority="high">
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
-    <!-- About -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row align-items-center g-5">
 
-          <!-- Text Column -->
-          <div class="col-md-6">
-            <h2 class="fw-bold mb-3">About Meridian Built</h2>
-            <p class="text-muted">
-              Meridian Built is a professional construction and consulting firm
-              focused on structured planning and controlled execution.
+    <!-- APPROACH -->
+    <section id="approach" class="approach-section" aria-labelledby="approach-heading">
+      <div class="container">
+
+        <div class="row mb-4 mb-lg-5">
+          <div class="col-lg-8">
+            <span class="section-label" aria-hidden="true">How We Work</span>
+            <h2 class="section-title" id="approach-heading">Our Approach</h2>
+            <p class="section-subtitle mb-0">
+              Structured execution built on clarity, consistency, and accountability at every phase.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-3 g-md-4" role="list">
+
+          <div class="col-sm-6 col-lg-4" role="listitem">
+            <article class="approach-card">
+              <div class="approach-icon" aria-hidden="true">
+                <i class="bi bi-compass"></i>
+              </div>
+              <h3>Precision Planning</h3>
+              <p>Defined scope, aligned stakeholders, and disciplined preparation before a single shovel breaks ground.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4" role="listitem">
+            <article class="approach-card">
+              <div class="approach-icon" aria-hidden="true">
+                <i class="bi bi-eye"></i>
+              </div>
+              <h3>Transparent Process</h3>
+              <p>Clear milestones, consistent reporting, and measurable accountability throughout the project lifecycle.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-sm-6 col-lg-4" role="listitem">
+            <article class="approach-card">
+              <div class="approach-icon" aria-hidden="true">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>Controlled Execution</h3>
+              <p>Risk-aware delivery methodology focused on long-term results and durable commercial value.</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+
+          <!-- Text -->
+          <div class="col-lg-6">
+            <span class="section-label" aria-hidden="true">Who We Are</span>
+            <h2 class="section-title" id="about-heading">About Meridian Built</h2>
+            <p class="text-muted mb-3">
+              Meridian Built is a professional construction and consulting firm focused on structured planning and
+              controlled execution for commercial clients.
             </p>
             <p class="text-muted mb-0">
-              We partner with commercial clients to deliver projects
-              with clarity, accountability, and long-term value.
+              We partner with clients at every phase of a project — from early feasibility through final delivery —
+              bringing clarity, accountability, and long-term perspective to complex infrastructure challenges.
             </p>
           </div>
 
-          <!-- Highlight Column -->
-          <div class="col-md-6">
-            <div class="p-4 bg-light rounded">
-              <h6 class="fw-semibold">Established Approach</h6>
-              <p class="text-muted mb-3">
-                Defined scope. Measurable milestones. Disciplined oversight.
-              </p>
-
-              <h6 class="fw-semibold">Client-Focused Execution</h6>
-              <p class="text-muted mb-0">
-                Transparent communication throughout every phase.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-5 bg-light">
-      <div class="container">
-
-        <!-- Section Title -->
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Core Services</h2>
-          <p class="text-muted mb-0">
-            Structured solutions tailored for commercial projects.
-          </p>
-        </div>
-
-        <!-- Services Grid -->
-        <div class="row g-4">
-
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-4">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Construction Management</h5>
-                <p class="text-muted mb-3">
-                  End-to-end oversight from planning to final delivery.
-                </p>
-                <small class="text-muted">
-                  Scope control · Budget monitoring · Timeline assurance
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-4">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Project Consulting</h5>
-                <p class="text-muted mb-3">
-                  Strategic advisory aligned with operational objectives.
-                </p>
-                <small class="text-muted">
-                  Feasibility · Planning · Risk assessment
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-4">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Renovation & Development</h5>
-                <p class="text-muted mb-3">
-                  Modernization and infrastructure upgrades for evolving needs.
-                </p>
-                <small class="text-muted">
-                  Design coordination · Execution · Compliance
-                </small>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Testimonial -->
-    <section class="py-5">
-      <div class="container">
-
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Client Perspective</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="card border-0 shadow-sm p-4 text-center">
-              <div class="card-body">
-                <p class="lead text-muted mb-4">
-                  “Meridian Built brought structure and clarity to a complex
-                  commercial project. Their disciplined coordination ensured
-                  smooth delivery from planning through execution.”
-                </p>
-
-                <h6 class="fw-semibold mb-0">
-                  Senior Operations Director
-                </h6>
-                <small class="text-muted">
-                  Regional Manufacturing Group
-                </small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-light">
-      <div class="container">
-
-        <!-- Section Title -->
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Contact Us</h2>
-          <p class="text-muted mb-0">
-            Discuss your project scope and timeline with our team.
-          </p>
-        </div>
-
-        <!-- Form -->
-        <div class="row justify-content-center">
+          <!-- Highlight Box -->
           <div class="col-lg-6">
+            <div class="about-highlight-box" role="list">
 
-            <form id="contactForm" novalidate>
-
-              <div class="mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Full Name" required>
-                <div class="invalid-feedback">
-                  Please enter your name.
+              <div class="highlight-item d-flex align-items-start gap-3" role="listitem">
+                <div class="highlight-icon" aria-hidden="true">
+                  <i class="bi bi-check2-circle"></i>
+                </div>
+                <div>
+                  <h6>Established Approach</h6>
+                  <p>Defined scope. Measurable milestones. Disciplined oversight at every stage.</p>
                 </div>
               </div>
 
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
-                <div class="invalid-feedback">
-                  Please enter a valid email.
+              <div class="highlight-item d-flex align-items-start gap-3" role="listitem">
+                <div class="highlight-icon" aria-hidden="true">
+                  <i class="bi bi-people"></i>
+                </div>
+                <div>
+                  <h6>Client-Focused Execution</h6>
+                  <p>Transparent communication and shared objectives throughout every project phase.</p>
                 </div>
               </div>
 
-              <div class="mb-3">
-                <textarea class="form-control" id="message" rows="4" placeholder="Project Details" required></textarea>
-                <div class="invalid-feedback">
-                  Please provide project details.
+              <div class="highlight-item d-flex align-items-start gap-3" role="listitem">
+                <div class="highlight-icon" aria-hidden="true">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h6>Risk-Aware Delivery</h6>
+                  <p>Proactive identification and management of risk before it becomes costly disruption.</p>
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-primary w-100">
-                Submit Inquiry
-              </button>
+            </div>
+          </div>
 
-              <div id="formSuccess" class="alert alert-success mt-3 d-none">
-                Thank you. We will respond within 24 hours.
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="row mb-4 mb-lg-5">
+          <div class="col-lg-8">
+            <span class="section-label" aria-hidden="true">What We Offer</span>
+            <h2 class="section-title" id="services-heading">Core Services</h2>
+            <p class="section-subtitle mb-0">
+              Structured solutions tailored for commercial and infrastructure projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-3 g-md-4" role="list">
+
+          <div class="col-md-6 col-lg-4" role="listitem">
+            <article class="service-card">
+              <i class="bi bi-hammer service-icon" aria-hidden="true"></i>
+              <h3>Construction Management</h3>
+              <p>End-to-end oversight from planning through final delivery, keeping projects on scope, budget, and
+                schedule.</p>
+              <div class="service-tags" aria-label="Includes">
+                <span class="service-tag">Scope control</span>
+                <span class="service-tag">Budget monitoring</span>
+                <span class="service-tag">Timeline assurance</span>
               </div>
+            </article>
+          </div>
 
-            </form>
+          <div class="col-md-6 col-lg-4" role="listitem">
+            <article class="service-card">
+              <i class="bi bi-lightbulb service-icon" aria-hidden="true"></i>
+              <h3>Project Consulting</h3>
+              <p>Strategic advisory aligned with your operational objectives and long-term business goals.</p>
+              <div class="service-tags" aria-label="Includes">
+                <span class="service-tag">Feasibility</span>
+                <span class="service-tag">Planning</span>
+                <span class="service-tag">Risk assessment</span>
+              </div>
+            </article>
+          </div>
 
+          <div class="col-md-6 col-lg-4" role="listitem">
+            <article class="service-card">
+              <i class="bi bi-tools service-icon" aria-hidden="true"></i>
+              <h3>Renovation &amp; Development</h3>
+              <p>Modernization and infrastructure upgrades that evolve your facilities to meet current and future
+                demands.</p>
+              <div class="service-tags" aria-label="Includes">
+                <span class="service-tag">Design coordination</span>
+                <span class="service-tag">Execution</span>
+                <span class="service-tag">Compliance</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial-section" aria-labelledby="testimonial-heading">
+      <div class="container">
+
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="section-label" style="color: var(--color-accent);" aria-hidden="true">Client Perspective</span>
+          <h2 class="section-title" id="testimonial-heading" style="color: #fff;">What Clients Say</h2>
+        </div>
+
+        <figure class="testimonial-card m-0">
+          <blockquote>
+            "Meridian Built brought structure and clarity to a complex commercial project. Their disciplined
+            coordination ensured smooth delivery from planning through execution."
+          </blockquote>
+          <div class="testimonial-divider" aria-hidden="true"></div>
+          <figcaption>
+            <p class="testimonial-name">Senior Operations Director</p>
+            <p class="testimonial-role">Regional Manufacturing Group</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="row mb-4 mb-lg-5">
+          <div class="col-lg-8 col-xl-6">
+            <span class="section-label" aria-hidden="true">Get in Touch</span>
+            <h2 class="section-title" id="contact-heading">Contact Us</h2>
+            <p class="section-subtitle mb-0">
+              Discuss your project scope and timeline with our team. We respond within one business day.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-7 col-xl-6">
+            <div class="contact-form-wrap">
+
+              <form id="contactForm" novalidate aria-label="Contact inquiry form">
+
+                <!-- Name -->
+                <div class="mb-3">
+                  <label class="form-label" for="name">Full Name <span aria-hidden="true">*</span></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="e.g. Jane Smith" required
+                    autocomplete="name" aria-required="true" aria-describedby="name-error">
+                  <div id="name-error" class="invalid-feedback" role="alert">
+                    Please enter your full name.
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="e.g. jane@company.com"
+                    required autocomplete="email" aria-required="true" aria-describedby="email-error">
+                  <div id="email-error" class="invalid-feedback" role="alert">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                  <label class="form-label" for="message">Project Details <span aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="4"
+                    placeholder="Briefly describe your project, scope, and timeline..." required aria-required="true"
+                    aria-describedby="message-error"></textarea>
+                  <div id="message-error" class="invalid-feedback" role="alert">
+                    Please describe your project (at least 10 characters).
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  Submit Inquiry
+                </button>
+
+                <div id="formSuccess" class="form-success d-none" role="status" aria-live="polite">
+                  <i class="bi bi-check-circle me-2" aria-hidden="true"></i>
+                  Thank you. We will respond within one business day.
+                </div>
+
+              </form>
+
+            </div>
           </div>
         </div>
 
       </div>
     </section>
+
   </main>
 
-  <footer class="py-4 bg-dark text-white">
-    <div class="container text-center">
+  <!-- =====================
+       FOOTER
+  ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center footer-inner">
 
-      <p class="mb-2 fw-semibold">
-        Meridian Built
-      </p>
+        <div class="col-sm-auto mb-3 mb-sm-0">
+          <p class="footer-brand">Meridian Built</p>
+          <p class="footer-tagline">Structured construction management &amp; consulting.</p>
+        </div>
 
-      <p class="mb-2 text-white-50 small">
-        Structured construction management and project consulting.
-      </p>
+        <div class="col-sm ms-sm-auto">
+          <div class="footer-social d-flex gap-3 justify-content-sm-end" aria-label="Social media links">
+            <a href="#" aria-label="Meridian Built on LinkedIn">
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="Meridian Built on X (formerly Twitter)">
+              <i class="bi bi-twitter-x" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" aria-label="Email Meridian Built">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
 
-      <p class="mb-0 text-white-50 small">
-        © 2026 Meridian Built. Demonstration project by Altronico.
+      </div>
+
+      <hr style="border-color: rgba(255,255,255,0.1); margin-block: 1.5rem 1rem;">
+
+      <p class="footer-copyright text-center mb-0">
+        &copy; 2026 Meridian Built. Demonstration project by Altronico.
       </p>
 
     </div>
   </footer>
-  <script>
-    const form = document.getElementById("contactForm");
-    const successMessage = document.getElementById("formSuccess");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 
-      let valid = true;
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
 
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const message = document.getElementById("message");
-
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      [name, email, message].forEach(field => {
-        field.classList.remove("is-invalid");
-      });
-
-      if (name.value.trim().length < 2) {
-        name.classList.add("is-invalid");
-        valid = false;
-      }
-
-      if (!emailPattern.test(email.value)) {
-        email.classList.add("is-invalid");
-        valid = false;
-      }
-
-      if (message.value.trim().length < 10) {
-        message.classList.add("is-invalid");
-        valid = false;
-      }
-
-      if (valid) {
-        successMessage.classList.remove("d-none");
-        form.reset();
-      }
-    });
-  </script>
 </body>
 
 </html>
